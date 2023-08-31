@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #myPlot{
+            width: 100%;
+            max-width: 700px;
+            border: 1px solid #000;
+        }
+    </style>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="myPlot"></div>
+    <script>
+        const xValues = [];
+        const yValues = [];
+        const exp = "Math.cos(x)";
+
+        for (let x = 0; x < 10; x += 0.2) {
+            xValues.push(x);
+            yValues.push(eval(exp));
+        }
+
+        const data = [{
+            x:xValues,
+            y:yValues,
+            mode:"markers"
+        }];
+        const layout = {title:"y = "+exp};
+        Plotly.newPlot("myPlot", data, layout);
+    </script>
+</body>
+</html>

@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <input type="button" value="pop up alert">
-    <input type="button" value="change color">
+    <input type="button" value="pop up alert" id="popup">
+    <input type="button" value="change color" id="changeColor">
+    <p id="para"></p>
 </body>
+<script>
+    const worker = new Worker("worker.js");
+    const popup = document.getElementById("popup");
+    const changeColor = document.getElementById("changeColor");
+
+    popup.addEventListener("click", function () {
+
+        worker.postMessage("mengirim pesan dari index");
+
+    })
+    worker.onmessage = function (message) {
+        // console.log("menerima pesan dari worker");
+        alert("Total number : " + message.data);
+    }
+    changeColor.addEventListener("click", function () {
+        if (document.body.style.backgroundColor != "red") {
+            document.body.style.backgroundColor = "red";
+        } else {
+            document.body.style.backgroundColor = "blue";
+        }
+    })
+    document.addEventListener("DOMContentLoaded",function(){
+        
+    })
+</script>
+
 </html>

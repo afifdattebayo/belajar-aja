@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="https://www.w3schools.com/html/img_the_scream.jpg" width="220" height="277" id="gambar"> 
+    <input type="button" value="Render Gambar" onclick="renderImg()">
+    <br>
+    <canvas id="mycanvas" width="400" height="400" style="border: 1px solid #ddd;"></canvas>
+
+    <script>
+        const mycanvas = document.getElementById("mycanvas");
+        const ctx = mycanvas.getContext("2d");
+        // ctx.fillRect(10, 10, 10, 10);
+        // ctx.fillRect(x,y,1,1) membuat titik 1px
+        // ctx.beginPath() untuk membuat garis baru.
+        // ctx.moveTo(x, y) untuk menentukan titik awal.
+        // ctx.lineTo(x, y) untuk menentukan titik akhir.
+        // ctx.stroke() untuk menggambar garisnya.
+        // ctx.closePath() untuk menggambar garis dari titik akhir ke awal
+
+        // @membuat garis
+        // ctx.beginPath();
+        // ctx.moveTo(10,10);
+        // ctx.lineTo(150,150);
+        // ctx.stroke();
+
+        // ctx.strokeRect(x, y, w, h) persegi dengan garis(outline) saja.
+        // ctx.fillRect(x, y, w, h) persegi dengan polesan warna(default -nya hitam).
+        // ctx.clearRect(x, y, w, h) persegi transparan untuk menghapus.
+
+        // @menggambar kotak
+        // ctx.strokeRect(10,10,100,100);
+        // ctx.fillRect(120,10,100,100);
+        // ctx.clearRect(5,5,10,10);
+
+        // @menggambar segitiga
+        // ctx.beginPath();
+        // ctx.moveTo(100,100);
+        // ctx.lineTo(100,300);
+        // ctx.lineTo(300,300);
+        // ctx.closePath();
+        // ctx.stroke();
+
+        // @membuat lingkaran
+        // ctx.beginPath();
+        // ctx.arc(50,50,40,0,2*Math.PI);
+        // ctx.stroke();
+
+        // strokeText() untuk teks dengan garis luar (outline) saja.
+        // fillText() untuk teks dengan warna (default hitam).
+
+        // @membuat teks
+        // ctx.font = "30px arial";
+        // ctx.fillText("Terima kasih sudah berkunjung ke:", 10, 50);
+
+        // ctx.font = "64px Arial";
+        // ctx.strokeText("PETANIKODE.com", 10, 120);
+
+        // @render gambar
+        function renderImg(){
+            const cv = document.getElementById("mycanvas");
+            const ct = cv.getContext("2d");
+            let img = document.getElementById("gambar");
+            ct.drawImage(img,10,10);
+        }
+    </script>
+</body>
+
+</html>

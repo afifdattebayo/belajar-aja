@@ -1,2 +1,2 @@
-# tutorial-html
-belajar html
+# My journey
+study programing

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #aaaaaa;
+        }
+        header{
+            background-color: #e5e5e5;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* section::after{
+            content: "";
+            display: table;
+            clear: both; 
+        } OR below*/
+
+        section{
+            overflow: auto;
+        }
+        nav{
+            float: left;
+            width: 20%;
+        }
+        nav a{
+            display: block;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #e5e5e5;  
+            color: black;
+        }
+        article{
+            float: left;
+            width: 60%;
+            padding: 0 20px;
+        }
+        aside{
+            float: left;
+            width: 20%;
+            padding: 0 20px;
+        }
+        footer{
+            background-color: #e5e5e5;
+            color: #aaaaaa;
+            padding: 10px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        
+        @media only screen and (max-width: 620px) {
+            nav, article, aside{
+                width: 100%;
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Hello World</h1>
+    </header>
+    <section>
+        <nav>
+            <a href="#">link 1</a>
+            <a href="#">link 2</a>
+            <a href="#">link 3</a>
+            <a href="#">link 4</a>
+        </nav>
+
+        <article>
+            <h2>Lorem, ipsum.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, consectetur?</p>
+        </article>
+        <aside>
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, fugiat!</p>
+        </aside>
+    </section>
+    <footer>
+        <p>@ copyright rekanonline.my.id</p>
+    </footer>
+</body>
+</html>

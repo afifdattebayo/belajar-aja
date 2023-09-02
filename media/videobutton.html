@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            width: 500px;
+            text-align: center;
+        }
+
+        .button {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="button">
+            <button onclick="playPause(this)">Play</button>
+            <button onclick="makeBig()">Big</button>
+            <button onclick="makeSmall()">Small</button>
+            <button onclick="makeNormal()">Normal</button>
+        </div>
+        <div class="video">
+            <video id="video1" width="420">
+                <source src="video/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+                <source src="video/file_example_OGG_480_1_7mg.ogg" type="video/ogg">
+                Your browser does not support HTML video
+            </video>
+        </div>
+    </div>
+
+    <script>
+        const videoSrc = document.getElementById("video1");
+        function playPause(btn) {
+            if (videoSrc.paused) {
+                videoSrc.play()
+                btn.innerHTML = "Pause";
+            } else {
+                videoSrc.pause()
+                btn.innerHTML = "Play";
+            }
+
+        }
+        function makeBig() {
+            videoSrc.width = 560;
+        }
+        function makeSmall() {
+            videoSrc.width = 320;
+        }
+        function makeNormal() {
+            videoSrc.width = 420;
+        }
+    </script>
+</body>
+
+</html>

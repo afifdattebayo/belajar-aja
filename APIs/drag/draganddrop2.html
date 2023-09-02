@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .float{
+            display: flex;
+            gap: 2rem;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 100px;
+            border: 1px solid #000;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+   <div class="float">
+    <div class="container" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img id="logo" src="images/640px-Spotify_logo_with_color_system.gif" alt="logo" width="100" draggable="true" ondragstart="drag(event)">
+    </div>
+    <div class="container" ondrop="drop(event)" ondragover="allowDrop(event)">
+    
+    </div>
+   </div>
+
+   <script>
+        function allowDrop(e){
+            e.preventDefault();
+        }
+        function drag(e){
+            e.dataTransfer.setData("text",e.target.id);
+        }
+        function drop(e){
+            e.preventDefault();
+            const data = e.dataTransfer.getData("text");
+            e.target.appendChild(document.getElementById(data));
+        }
+   </script>
+</body>
+</html>

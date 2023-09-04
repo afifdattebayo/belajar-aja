@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <style>
+            body{
+                box-sizing: border-box;
+            }
+            .container{
+                display: flex;
+                flex-direction: row;
+                gap: 0.7rem;
+            }
+            .card{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.8rem;
+                width: 18%;
+                border: 1px solid white;
+                padding: 10px;
+                background-color:#e5e5e5;
+            }
+            .card>h2{
+                font-size: 2vw;
+                color: tomato;
+            }
+            .container .card:nth-child(3)>h2{
+                color: inherit;
+            }
+
+            img{
+                width: 100%;
+            }
+            .card input{
+                padding: 5px 25px;
+                border-radius: 5px;
+                border: none;
+                background-color: green;
+                color: aliceblue;
+                cursor: pointer;
+            }
+        </style>
+        <title>belajar display</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <h2>Display: none</h2>
+                <img src="../src/img_5terre.jpg" alt="tre" >
+                <input type="button" value="None" id="none">
+            </div>
+            <div class="card">
+                <h2>Visibility: Hidden</h2>
+                <img src="../src/img_forest.jpg" alt="tre" >
+                <input type="button" value="hidden" id="hidden">
+            </div>
+            <div class="card">
+                <h2>Reset</h2>
+                <img src="../src/img_lights.jpg" alt="tre" >
+                <input type="button" value="reset" id="reset">
+            </div>
+        </div>
+
+        <script>
+            const none = document.getElementById("none");
+            const hidden = document.getElementById("hidden");
+            const reset = document.getElementById("reset");
+
+            none.addEventListener("click", function(e){
+                none.parentElement.setAttribute("style","display:none");
+            })
+            hidden.addEventListener("click",function(){
+                hidden.parentElement.setAttribute("style","visibility:hidden");
+            })
+            reset.addEventListener("click", function(){
+                none.parentElement.removeAttribute("style");
+                hidden.parentElement.removeAttribute("style");
+            })
+        </script>
+    </body>
+</html>

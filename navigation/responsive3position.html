@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                margin: 0;
+            }
+            ul{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                overflow: hidden;
+                background-color: #f1f1f1;
+                width: 250px;
+                float: left;
+                height: 100%;
+            }
+            li a{
+                display: block;
+                color: #000;
+                text-decoration: none;
+                padding: 10px;
+                font-size: 18px;
+            }
+            li:first-child a{
+                background-color: green;
+                color: white;
+            }
+            li:not(:first-child) a:hover{
+                background-color: #555;
+                color: white;
+            }
+            section{
+                padding: 20px;
+                margin-left: 250px;
+            }
+            @media screen and (max-width:800px) {
+                ul{
+                   float: none; 
+                   height: auto;
+                   width: 100%;
+                }
+                li{
+                    float: left;
+                }
+                section{
+                    margin: 0;
+                }
+            }
+            @media screen and (max-width:400px) {
+                li{
+                    float: none;
+                    text-align: center;
+                }
+            }
+        </style>
+        <title>responsive</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <section>
+            <h1>Responsive 3 Width</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, asperiores.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, asperiores.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, asperiores.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, asperiores.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, asperiores.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, asperiores.</p>
+        </section>
+    </body>
+</html>

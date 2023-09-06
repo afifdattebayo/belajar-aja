@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{margin: 0;}
+            ul{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                background-color: #555;
+                overflow: hidden;
+            }
+            li{
+                float: left;
+            }
+            li a{
+                display: block;
+                text-decoration: none;
+                color: white;
+                font-size: 18px;
+                padding: 10px;
+            }
+            ul:not(.dropdown) li a:hover{
+                background-color: tomato;
+                color: white;
+            }
+            ul li:nth-child(3):hover .dropdown{
+                display: block;
+            }
+            .dropdown{
+                position: absolute;
+                width: 150px;
+                z-index: 1;
+                background-color: #f1f1f1;
+                display: none;
+            }
+            ul.dropdown li{
+                float: none;
+            }
+            ul.dropdown li a{
+                color: #000;
+            }
+            ul.dropdown li a:hover{
+                background-color: #f9f9f9;
+                color: #000;
+            }
+        </style>
+        <title>Dropdown navigation bar</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li>
+                <a href="javascript:void(0)">Dropdown</a>
+                <ul class="dropdown">
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </li>
+        </ul>
+        <section>
+            <h1>Dropdown Menu inside a Navigation Bar</h1>
+            <p>Hover over the "Dropdown" link to see the dropdown menu.</p>
+        </section>
+    </body>
+</html>

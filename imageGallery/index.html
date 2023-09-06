@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        *{
+            box-sizing: border-box;
+        }
+        .gallery{
+            overflow: hidden;
+        }
+        .border{
+            border: 1px solid #ddd;
+        }
+        .border:hover {
+            border: 2px solid #aaa;
+        }
+        .card{
+            width: 24.9%;
+            float: left;
+            padding: 0 6px;
+        }
+
+        .card img{
+            width: 100%;
+            cursor: pointer;
+        }
+        .card span{
+            display: block;
+            padding: 20px;
+            text-align: center;
+        }
+        @media screen and (max-width:700px) {
+            .card{
+                width: 49.9%;
+            }
+        }
+        @media screen and (max-width:500px) {
+            .card{
+                width: 99.9%;
+            }
+        }
+        </style>
+        <title>Gallery Image</title>
+    </head>
+    <body>
+        <h1>Responsive Image Gallery</h1>
+        <p>Resize the browser window to see the effect.</p>
+        <div class="gallery">
+            <div class="card">
+                <div class="border">
+                    <img src="../src/img_5terre.jpg" alt="5tree">
+                    <span>Add a description of the image here</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="border">
+                    <img src="../src/img_forest.jpg" alt="forest">
+                    <span>Add a description of the image here</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="border">
+                    <img src="../src/img_lights.jpg" alt="light">
+                    <span>Add a description of the image here</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="border">
+                    <img src="../src//img_forest.jpg" alt="tree">
+                    <span>Add a description of the image here</span>
+                </div>
+            </div>
+        </div>
+        <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+        <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+    </body>
+</html>

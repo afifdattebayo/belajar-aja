@@ -1,0 +1,45 @@
+<html>
+    <head>
+
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+            }
+            ul{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                background-color: #000;
+            }
+            ul::after{
+                content: "";
+                clear: both;
+                display: table;
+            }
+            li{
+                float: left;
+            }
+            li a{
+                display: block;
+                padding: 10px;
+                color: white;
+                text-decoration: none;
+                font-size: 18px;
+            }
+            li:last-child{
+                background-color: green;
+                float: right;
+            }
+        </style>
+    <title>navigation float right</title>
+</head>
+<body>
+    <ul>
+        <li><a href="#" id="">Home</a></li>
+        <li><a href="#" id="">News</a></li>
+        <li><a href="#" id="">Contact</a></li>
+        <li><a href="#" id="">About</a></li>
+    </ul>
+</body>
+</html>

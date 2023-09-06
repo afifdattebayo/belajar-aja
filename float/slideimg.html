@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+           *{
+            box-sizing: border-box;
+           }
+            .container{
+                width: 500px;
+            }
+            .container::after{
+                content: "";
+                clear: both;
+                display: table;
+            }
+            .img-container{
+                float: left;
+                width: 33.33%;
+                padding: 5px;
+            }
+            .img-container img{
+                width: 100%;
+            }
+
+        </style>
+        <title>img slide float</title>
+    </head>
+    <body>
+        <h2>Image side by slide</h2>
+        <p>penggunaan float</p>
+        <div class="container">
+            <div class="img-container">
+                <img src="../src/img_5terre.jpg" alt="5tree">
+            </div>
+            <div class="img-container">
+                <img src="../src/img_lights.jpg" alt="light">
+            </div>
+            <div class="img-container">
+                <img src="../src/img_forest.jpg" alt="forest">
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style>
+            .container{
+                width: 500px;
+                padding: 10px;
+            }
+            .box{
+                border: 1px solid;
+                padding: 5px;
+                margin-bottom: 50px;
+            }
+            .container .box img{
+                float: right;
+            }
+            .container .box:nth-child(4)::after{
+                content: "";
+                clear: both;
+                display: table;
+            }
+        </style>
+        <title>clear</title>
+    </head>
+    <h2>menghapus efek float dengan clear</h2>
+    <div class="container">
+        <h2>Tanpa clear</h2>
+        <div class="box">
+            <img src="../src/pineapple.jpg" alt="pineapple" width="122" height="122"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, dolorum. Fuga odio exercitationem reprehenderit, voluptates ex asperiores corporis! Temporibus, quasi.z
+        </div>
+        <h2>Dengan clear</h2>
+        <div class="box">
+            <img src="../src/pineapple.jpg" alt="pineapple" width="122" height="122"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, dolorum. Fuga odio exercitationem reprehenderit, voluptates ex asperiores corporis! Temporibus, quasi.z
+        </div>
+    </div>
+</html>

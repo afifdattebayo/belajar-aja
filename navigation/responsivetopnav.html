@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            background-color: #000;
+            overflow: hidden;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+        }
+        li:first-child a{
+            background-color: green;
+        }
+        li:last-child{
+            float: right;
+        }
+        section{
+            padding: 20px;
+        }
+        @media screen and (max-width:600px){
+            li, li:last-child{
+                float: none;
+                text-align: center;
+            }
+        }
+    </style>
+    <title>Responsive top navigastion</title>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+    <section>
+        <h2>Responsive top navigation</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam enim numquam vel, consequatur repudiandae
+            aperiam quos laudantium at tempora nesciunt.</p>
+    </section>
+</body>
+
+</html>

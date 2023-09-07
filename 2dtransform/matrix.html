@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div{
+            box-sizing: border-box;
+            background-color: yellow;
+            margin-bottom: 20px;
+            border: 1px solid #000;
+            height: 20vh;
+            width: 300px;
+            padding: 10px;
+        }
+        
+div#myDiv1 {
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+div#myDiv2 {
+  transform: matrix(1, 0, 0.5, 1, 150, 0);
+}
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>The matrix() Method</h1>
+
+    <p>The matrix() method combines all the 2D transform methods into one.</p>
+    <p>The parameters are as follow: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())</p>
+    <div>
+        This a normal div element.
+    </div>
+
+    <div id="myDiv1">
+        Using the matrix() method.
+    </div>
+
+    <div id="myDiv2">
+        Another use of the matrix() method.
+    </div>
+</body>
+
+</html>

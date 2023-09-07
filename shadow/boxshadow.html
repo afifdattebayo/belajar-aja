@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5 {
+            box-sizing: border-box;
+            margin-bottom: 40px;
+            width: 200px;
+            height: 100px;
+            background-color: tomato;
+            padding: 10px;
+        }
+        .box1{
+            box-shadow: 10px 10px;
+            
+        }
+        .box2{
+            box-shadow: 10px 10px blue;
+        }
+        .box3{
+            box-shadow: 10px 10px 10px blue;
+        }
+        .box4{
+            box-shadow: 10px 10px 10px  10px blue;
+        }
+        .box5{
+            box-shadow: 10px 10px 10px  10px blue inset;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box1"><span>default</span></div>
+    <div class="box2"><span>color</span></div>
+    <div class="box3"><span>blur</span></div>
+    <div class="box4"><span>spread</span></div>
+    <div class="box5"><span>inset</span></div>
+</body>
+
+</html>

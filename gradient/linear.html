@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .box,
+        .box2, 
+        .box3, 
+        .box4,
+        .box5,
+        .box6,
+        .box7,
+        .box8
+        {
+            box-sizing: border-box;
+            border: 1px solid #000;
+            width: 400px;
+            height: 200px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .box{
+            background-image: linear-gradient(red, yellow);
+        }
+        .box2{
+            background-image: linear-gradient(to right, red, yellow);
+        }
+        .box3{
+            background-image: linear-gradient(to left, red, yellow);
+        }
+        .box4{
+            background-image: linear-gradient(to bottom right, red, yellow);
+        }
+        .box5{
+            background-image: linear-gradient(180deg, red, yellow);
+        }
+        .box6{
+            background-image: linear-gradient(red, yellow, green);
+        }
+        .box7{
+            background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+        }
+        .box8{
+            background-image: repeating-linear-gradient(red,orange 10%,yellow 20%);
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <h1>Top to bottom (default)</h1>
+    </div>
+    <div class="box2">
+        <h1>left to right</h1>
+    </div>
+    <div class="box3">
+        <h1>right to left</h1>
+    </div>
+    <div class="box4">
+        <h1>to bottom  to right</h1>
+    </div>
+    <div class="box5">
+        <h1>180deg</h1>
+    </div>
+    <div class="box6">
+        <h1>tri color</h1>
+    </div>
+    <div class="box7">
+        <h1>rainbow</h1>
+    </div>
+    <div class="box8">
+        <h1>repeat-linear-gradient</h1>
+    </div>
+</body>
+</html>

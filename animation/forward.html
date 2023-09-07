@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            animation-name: anjay;
+            animation-duration: 4s;
+            position: relative;
+            animation-iteration-count: 3;
+            color: white;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        div:nth-child(2){
+           animation-fill-mode: forwards;
+        }
+        div:nth-child(3){
+           animation-fill-mode: backwards;
+        }
+        div:nth-child(4){
+           animation-fill-mode: both;
+        }
+        @keyframes anjay {
+        from{background-color: red; left: 0;}
+            to{background-color: yellow; left: 300px;}
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>CSS Animation</h1>
+
+    <div><span>forward</span></div>
+    <div><span>backward</span></div>
+    <div><span>both</span></div>
+
+    <p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+</body>
+
+</html>

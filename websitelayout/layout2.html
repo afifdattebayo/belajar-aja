@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .header{
+            width: 100%;
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 20px 0;
+            line-height: 1.8;
+        }
+        .topnav{
+            width: 100%;
+            background-color: #000;
+        }
+        .topnav a{
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+        }
+        .topnav a:hover{
+            background-color: #ddd;
+            color: #000;
+        }
+        .column{
+            float: left;
+            width: 33.33%;
+            padding: 20px;
+        }
+        .row::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        @media screen and (max-width:700px) {
+            .column{
+                width: 100%;
+            }
+        }
+        @media screen and (max-width:500px) {
+            .topnav a{
+                text-align: center;
+                display: block;
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Header</h1>
+        <p>Resize the browser window to see the responsive effect.</p>
+    </div>
+    <div class="topnav">
+        <a href="javascript:void(0)">Link</a>
+        <a href="javascript:void(0)">Link</a>
+        <a href="javascript:void(0)">Link</a>
+    </div>
+    <div class="row">
+        <div class="column">
+            <h2>Column</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quibusdam error eius esse, officiis,
+                accusamus accusantium atque placeat rem porro molestiae! Voluptate molestiae facilis voluptatem illum
+                quae tempore sint fuga, excepturi debitis recusandae consectetur. Similique officia ea veritatis
+                asperiores, sit at? Sint error quo, quidem architecto quas minima corporis dolorum.</p>
+        </div>
+        <div class="column">
+            <h2>Column</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quibusdam error eius esse, officiis,
+                accusamus accusantium atque placeat rem porro molestiae! Voluptate molestiae facilis voluptatem illum
+                quae tempore sint fuga, excepturi debitis recusandae consectetur. Similique officia ea veritatis
+                asperiores, sit at? Sint error quo, quidem architecto quas minima corporis dolorum.</p>
+        </div>
+        <div class="column">
+            <h2>Column</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quibusdam error eius esse, officiis,
+                accusamus accusantium atque placeat rem porro molestiae! Voluptate molestiae facilis voluptatem illum
+                quae tempore sint fuga, excepturi debitis recusandae consectetur. Similique officia ea veritatis
+                asperiores, sit at? Sint error quo, quidem architecto quas minima corporis dolorum.</p>
+        </div>
+    </div>
+</body>
+
+</html>

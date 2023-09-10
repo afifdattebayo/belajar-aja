@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .flex-container{
+                display: flex;
+                background-color: lightblue;
+            }
+            .flex-container div{
+                padding: 50px;
+                width: 125px;
+                margin: 5px;
+                font-size: 20px;
+                background-color: #eee;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div style="order:3">1</div>
+            <div style="order:2">2</div>
+            <div style="order:4">3</div>
+            <div style="order:1">4</div>
+        </div>
+    </body>
+</html>

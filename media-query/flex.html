@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .header{
+            text-align: center;
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .column{
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+        .column img{
+            margin-top: 8px;
+        }
+
+        @media screen and (max-width:800px) {
+            .column{
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+        @media screen and (max-width:600px) {
+            .column{
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Responsive Image Grid</h1>
+        <p>Resize the browser window to see the responsive effect.</p>
+    </div>
+
+    <!-- Photo Grid -->
+    <div class="row">
+        <div class="column">
+            <img src="../src/flex/wedding.jpg" style="width:100%">
+            <img src="../src/flex/rocks.jpg" style="width:100%">
+            <img src="../src/flex/falls2.jpg" style="width:100%">
+            <img src="../src/flex/paris.jpg" style="width:100%">
+            <img src="../src/flex/nature.jpg" style="width:100%">
+            <img src="../src/flex/mist.jpg" style="width:100%">
+            <img src="../src/flex/paris.jpg" style="width:100%">
+        </div>
+
+        <div class="column">
+            <img src="../src/flex/underwater.jpg" style="width:100%">
+            <img src="../src/flex/ocean.jpg" style="width:100%">
+            <img src="../src/flex/wedding.jpg" style="width:100%">
+            <img src="../src/flex/mountainskies.jpg" style="width:100%">
+            <img src="../src/flex/rocks.jpg" style="width:100%">
+            <img src="../src/flex/underwater.jpg" style="width:100%">
+        </div>
+
+        <div class="column">
+            <img src="../src/flex/wedding.jpg" style="width:100%">
+            <img src="../src/flex/rocks.jpg" style="width:100%">
+            <img src="../src/flex/falls2.jpg" style="width:100%">
+            <img src="../src/flex/paris.jpg" style="width:100%">
+            <img src="../src/flex/nature.jpg" style="width:100%">
+            <img src="../src/flex/mist.jpg" style="width:100%">
+            <img src="../src/flex/paris.jpg" style="width:100%">
+        </div>
+
+        <div class="column">
+            <img src="../src/flex/underwater.jpg" style="width:100%">
+            <img src="../src/flex/ocean.jpg" style="width:100%">
+            <img src="../src/flex/wedding.jpg" style="width:100%">
+            <img src="../src/flex/mountainskies.jpg" style="width:100%">
+            <img src="../src/flex/rocks.jpg" style="width:100%">
+            <img src="../src/flex/underwater.jpg" style="width:100%">
+        </div>
+    </div>
+
+</body>
+
+</html>

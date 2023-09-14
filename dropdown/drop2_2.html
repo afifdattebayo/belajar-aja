@@ -1,0 +1,254 @@
+<html>
+
+<head>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f1f1f1;
+            font-family: "Roboto", "Sans serif";
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul.list {
+            width: 600px;
+            background-color: #fff;
+            margin: 0 auto;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+        }
+
+        ul.list li {
+            flex: 25%;
+        }
+
+        a.menu {
+            display: block;
+            position: relative;
+            text-align: center;
+        }
+
+        .list li:nth-child(1) .menu h2 {
+            padding: 10px;
+            background-color: #8DB842;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .list li:nth-child(1) a.menu h2::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 49px;
+            border-left: 75px solid transparent;
+            border-right: 75px solid transparent;
+            border-top: 10px solid #8DB842;
+            z-index: 1;
+        }
+
+        .list li:nth-child(2) .menu h2 {
+            padding: 10px;
+            background-color: #3E86A3;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .list li:nth-child(2) a.menu h2::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 49px;
+            border-left: 75px solid transparent;
+            border-right: 75px solid transparent;
+            border-top: 10px solid #3E86A3;
+            z-index: 1;
+        }
+
+        .list li:nth-child(3) .menu h2 {
+            padding: 10px;
+            background-color: #B96666;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .list li:nth-child(3) a.menu h2::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 49px;
+            border-left: 75px solid transparent;
+            border-right: 75px solid transparent;
+            border-top: 10px solid #B96666;
+            z-index: 1;
+        }
+
+        .list li:nth-child(4) .menu h2 {
+            padding: 10px;
+            background-color: #CB9B48;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .list li:nth-child(4) a.menu h2::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 49px;
+            border-left: 75px solid transparent;
+            border-right: 75px solid transparent;
+            border-top: 10px solid #CB9B48;
+            z-index: 1;
+        }
+
+        a.menu h2::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 39px;
+            border-left: 75px solid transparent;
+            border-right: 75px solid transparent;
+            border-bottom: 10px solid #eee;
+            opacity: 0;
+            transition: .5s cubic-bezier(.73, .32, .34, 1.5);
+        }
+
+        ul.menu-dropdown {
+            background-color: #eee;
+            margin: 0;
+            padding: 15px 0;
+            position: relative;
+            top: -20px;
+            transition: .5s cubic-bezier(.73, .32, .34, 1.5);
+            
+        }
+
+        ul.menu-dropdown::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            border-left: 75px solid transparent;
+            border-right: 75px solid transparent;
+            border-top: 10px solid #eee;
+        }
+
+        .menu-dropdown li {
+            width: 100%;
+            padding: 10px;
+            text-align: left;
+            color: black;
+        }
+
+        .menu:not(:hover) .menu-dropdown {
+            padding: 4px 0;
+        }
+
+        a.menu:hover .menu-dropdown {
+            /* z-index: 99; */
+        }
+        a.menu:hover h2::after{
+            /* opacity: 1; */
+        }
+
+        .menu-dropdown li:hover {
+            background-color: #ddd;
+        }
+
+        .menu:not(:hover)>.menu-dropdown>* {
+            visibility: hidden;
+            height: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            margin: 0;
+            color: rgba(25, 25, 25, 0);
+            transition:
+                0.5s 0.1s height,
+                0.5s 0.1s padding,
+                0.5s 0.1s margin,
+                0.3s color,
+                0.6s visibility;
+        }
+
+        ul.menu-dropdown>* {
+            overflow: hidden;
+            height: 30px;
+            padding: 5px 10px;
+            background: rgba(0, 0, 0, 0);
+            transition:
+                0.5s height cubic-bezier(.73, .32, .34, 1.5),
+                0.5s padding cubic-bezier(.73, .32, .34, 1.5),
+                0.2s background-color,
+                0.5s 0.2s color;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="list">
+        <li>
+            <a href="#click" class="menu">
+                <h2 class="menu-title">animals</h2>
+                <ul class="menu-dropdown">
+                    <li>cat</li>
+                    <li>dog</li>
+                    <li>horse</li>
+                    <li>cow</li>
+                    <li>pig</li>
+                </ul>
+            </a>
+        </li>
+        <li>
+            <a href="#click" class="menu">
+                <h2 class="menu-title">names</h2>
+                <ul class="menu-dropdown">
+                    <li>cat</li>
+                    <li>dog</li>
+                    <li>horse</li>
+                    <li>cow</li>
+                    <li>pig</li>
+                </ul>
+            </a>
+        </li>
+        <li>
+            <a href="#click" class="menu">
+                <h2 class="menu-title">things</h2>
+                <ul class="menu-dropdown">
+                    <li>cat</li>
+                    <li>dog</li>
+                    <li>horse</li>
+                    <li>cow</li>
+                    <li>pig</li>
+                </ul>
+            </a>
+        </li>
+        <li>
+            <a href="#click" class="menu">
+                <h2 class="menu-title">movies</h2>
+                <ul class="menu-dropdown">
+                    <li>cat</li>
+                    <li>dog</li>
+                    <li>horse</li>
+                    <li>cow</li>
+                    <li>pig</li>
+                </ul>
+            </a>
+        </li>
+    </ul>
+</body>
+
+</html>

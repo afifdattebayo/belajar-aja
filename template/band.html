@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/band.css">
-    <title>Document</title>
+    <title>template</title>
 </head>
 
 <body>
@@ -19,29 +19,157 @@
             <li><a href="javascript:void(0)">band</a></li>
             <li><a href="javascript:void(0)">tour</a></li>
             <li><a href="javascript:void(0)">contact</a></li>
-            <li id="drop">
-                <a href="javascript:void(0)">more</a>
-                <ul class="dropdown">
-                    <li><a href="javascript:void(0)">merchandise</a></li>
-                    <li><a href="javascript:void(0)">extras</a></li>
-                    <li><a href="javascript:void(0)">media</a></li>
-                </ul>
-            </li>
-               
+            <li><a href="javascript:void(0)">more</a></li>
+            <li><a href="javascript:void(0)" id="bar"><i class="fa fa-bars"></i></a></li>
             <li><a href="javascript:void(0)"><i class="fa fa-search"></i></a></li>
         </ul>
-        <div class="bgcover">
-            <div class="text-bottom">
-                <h1>chicago</h1>
-                <p>Lorem ipsum dolor sit amet.</p>
+        <ul class="mnav h">
+            <li><a href="javascript:void(0)">band</a></li>
+            <li><a href="javascript:void(0)">tour</a></li>
+            <li><a href="javascript:void(0)">contact</a></li>
+            <li><a href="javascript:void(0)">more</a></li>
+        </ul>
+        <div class="bg-cover">
+            <div class="bg-text">
+                <h3>Chicago</h3>
+                <p><b>Thank you, Chicago - A night we won't forget.</b></p>
             </div>
         </div>
     </div>
+
     <section class="sec1">
-       
+        <div class="contain">
+            <h3>THE BAND</h3>
+            <span>We love music</span>
+            <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="tshirt">
+                <div class="tshirt-card">
+                    <h3>Name</h3>
+                    <img src="./src/bandmember.jpg" alt="bandmember">
+                </div>
+                <div class="tshirt-card">
+                    <h3>Name</h3>
+                    <img src="./src/bandmember.jpg" alt="bandmember">
+                </div>
+                <div class="tshirt-card">
+                    <h3>Name</h3>
+                    <img src="./src/bandmember.jpg" alt="bandmember">
+                </div>
+            </div>
+        </div>
     </section>
 
-    <script src="./js/band.js" defer></script>
+    <section class="sec2">
+        <div class="contain">
+            <h3>TOUR DATES</h3>
+            <span>Remember to book your tickets!</span>
+            <div class="table">
+                <div class="table-row">
+                    <span>september</span>
+                    <span>sold out</span>
+                </div>
+                <div class="table-row">
+                    <span>october</span>
+                    <span>sold out</span>
+                </div>
+                <div class="table-row">
+                    <span>november</span>
+                    <span>3</span>
+                </div>
+            </div>
+            <div class="ticket">
+                <div class="ticket-card">
+                    <img src="./src/newyork.jpg" alt="new york">
+                    <div class="ticket-card-text">
+                        <h1>New York</h1>
+                        <span>Fri 27 Nov 2016</span>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button>buy tickets</button>
+                    </div>
+                </div>
+                <div class="ticket-card">
+                    <img src="./src/paris.jpg" alt="new york">
+                    <div class="ticket-card-text">
+                        <h1>Paris</h1>
+                        <span>Sat 28 Nov 2016</span>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button>buy tickets</button>
+                    </div>
+                </div>
+                <div class="ticket-card">
+                    <img src="./src/sanfran.jpg" alt="new york">
+                    <div class="ticket-card-text">
+                        <h1>San Francisco</h1>
+                        <span>Sun 29 Nov 2016</span>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button>buy tickets</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="sec3">
+        <div class="contain">
+            <h3>CONTACT</h3>
+            <span>Fan? Drop a note!</span>
+            <div class="address">
+                <div class="address-left">
+                    <div class="address-left-row">
+                        <i class="fa fa-map-marker"></i>
+                        <span>Chicago, US</span>
+                    </div>
+                    <div class="address-left-row">
+                        <i class="fa fa-phone"></i>
+                        <span>Phone: +00 151515</span>
+                    </div>
+                    <div class="address-left-row">
+                        <i class="fa fa-envelope"></i>
+                        <span>Email: mail@mail.com</span>
+                    </div>
+                </div>
+                <div class="address-right">
+                    <form>
+                        <div class="address-right-row">
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="address-right-row">
+                            <input type="text" placeholder="Message">
+                        </div>
+                        <div class="address-right-row">
+                            <button>send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec4"></section>
+
+    <div class="footer">
+        <div class="footer-contain">
+            <div class="icon-social">
+                <i class="fa fa-facebook-square"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-snapchat"></i>
+                <i class="fa fa-pinterest"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <div class="author">powered by @afif</div>
+        </div>
+    </div>
+    <script src="./js/band.js"></script>
 </body>
 
 </html>

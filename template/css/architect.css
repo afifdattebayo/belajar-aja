@@ -1,0 +1,252 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 1px 1px 15px 1px rgb(0 0 0 / 29%);
+}
+
+nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-right {
+    float: right;
+}
+
+.nav-left,
+.nav-right {
+    letter-spacing: 4px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background-color: #ccc;
+}
+
+.nav-left>a>b {
+    text-transform: uppercase;
+    margin-right: 5px;
+
+}
+
+#bg-cover {
+    background-image: url("../src/architect/architect.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding-bottom: 45%;
+    position: relative;
+}
+
+.sec1-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    letter-spacing: 4px;
+    font-size: 30px;
+}
+
+.sec1-text b {
+    text-transform: uppercase;
+    margin-right: 15px;
+    padding: 15px;
+    background-color: black;
+}
+
+.sec1-text span {
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.contain {
+    width: 90%;
+    margin: 60px auto;
+}
+
+.contain h3 {
+    font-size: 20px;
+    font-weight: 200;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    margin-bottom: 50px;
+    text-transform: capitalize;
+}
+
+.project-contain {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 10px;
+}
+
+.project-contain-card {
+    flex: 25%;
+}
+
+.project-contain-card img {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.project-contain-card span {
+    position: absolute;
+    background-color: black;
+    display: inline-block;
+    color: white;
+    z-index: 1;
+    padding: 10px;
+}
+
+.sec3>.contain>p {
+    text-align: left;
+    margin-bottom: 50px;
+    line-height: 1.5;
+}
+
+.about {
+    display: flex;
+    gap: 1rem;
+    line-height: 1.5;
+}
+
+.about-card {
+    flex: 25%;
+}
+
+.about-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    filter: saturate(.4);
+}
+.about-card span{
+    display: inline-block;
+    font-style: italic;
+    opacity: .6;
+    padding: 10px 0;
+    font-size: 16px;
+}
+.about-card p{
+    margin-bottom: 10px;
+}
+.about-card button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    text-transform: uppercase;
+}
+.about-card button:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+
+#contact .contain h3{
+    margin-bottom: 20px;
+}
+#contact .contain p{
+    margin-bottom: 20px;
+}
+#contact .contain form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+form input{
+    padding: 10px;
+}
+form input:last-child{
+    width: 170px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+form input:last-child:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.sec5>.contain{
+    background-image: url("../src/map.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    padding-bottom: 50%;
+}
+
+.footer{
+    background-color: black;
+    width: 100%;
+    text-align: center;
+}
+.footer-text{
+    color: white;
+    padding: 40px;
+    text-transform: capitalize;
+}
+@media screen and (max-width:600px) {
+    .nav-right {
+        display: none;
+    }
+
+    .sec1-text span {
+        display: none;
+    }
+
+    .project-contain {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .about{
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+    .project-contain {
+        flex-wrap: wrap;
+    }
+
+    .project-contain-card {
+        flex: 48%;
+    }
+    .about {
+        flex-wrap: wrap;
+    }
+
+    .about-card {
+        flex: 48%;
+    }
+}

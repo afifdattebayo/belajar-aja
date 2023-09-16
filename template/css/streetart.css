@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&family=Raleway:wght@100;200;300;400;500;600;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Raleway", "sans serif";
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.header{
+    padding: 30px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 25px;
+}
+
+nav a{
+    padding: 10px 15px;
+    font-weight: 400;
+}
+nav a:hover{
+    background-color: #bbb;
+}
+
+nav>div:first-child>a {
+    text-transform: uppercase;
+}
+
+nav>div:last-child>a {
+    text-transform: capitalize;
+}
+
+.sec1{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.sec1-left{
+    flex: 50%;
+}
+.sec1-right{
+    flex: 50%;
+}
+
+.sec1 img{
+    width: 100%;
+    height: auto;
+    margin-bottom: -8px;
+}
+
+.sec2{
+    margin: 50px 0;
+}
+.contain{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.contain h3{
+    margin-bottom: 50px;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.contain img{
+    width: 40%;
+    height: auto;
+    margin-bottom: 50px;
+}
+.contain p{
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.sec3 h3{
+    color: rgba(236, 95, 13, 0.651);
+    font-size: 20px;
+    font-weight: 400;
+}
+.sec3 .contain form{
+    display: flex;
+    flex-direction: column;
+}
+.sec3 .contain form input{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.sec3 .contain form label{
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.sec3 .contain form input:last-child{
+    background-color: rgb(99, 99, 99);
+    color: white;
+    border: none;
+}
+.sec3 .contain form input:last-child:hover{
+    background-color: #ddd;
+    color: black;
+    cursor: pointer;
+}
+
+.footer{
+    margin-bottom: 50px;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width:600px) {
+    .sec1{
+        flex-direction: column;
+    }
+}

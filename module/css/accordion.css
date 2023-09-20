@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.accordion-row {
+    border: 1px solid #000;
+    padding: 10px;
+    margin-bottom: 20px;
+    line-height: 2;
+    overflow: hidden;
+}
+
+.accordion-header {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    user-select: none;
+}
+
+.accordion-header:hover {
+    cursor: pointer;
+}
+
+.accordion-body {
+    position: relative;
+    opacity: .6;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.accordion-body p {
+    position: relative;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    bottom: 0;
+    font-size: 0;
+    vertical-align: baseline;
+    background-color: transparent;
+    word-wrap: break-word;
+    transition: 1s ease;
+}
+
+.accordion-body.a-active p {
+    font-size: 100%;
+    text-size-adjust: 100%;
+    transition: 1s ease;
+
+}

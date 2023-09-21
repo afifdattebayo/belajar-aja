@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.top-slide{
+    background-color: #F7F7F7;
+}
+
+.top-slide-contain{
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    height: 40px;
+    overflow: hidden;
+}
+.slide-left{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    z-index: 10;
+}
+.slide-midle{
+    display: flex;
+    position: absolute;
+    width: calc(900px * 3);
+    padding: 10px;
+    /* transform: translateX(-900px); */
+}
+.slide-right{
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    z-index: 10;
+}
+.slide-contain{
+    /* background-color: #eee; */
+    width: 900px;
+    text-align: center;
+}

@@ -12,6 +12,7 @@ let isStart = false;
 let startX;
 let currenIndex = 1;
 
+
 const setSlide = (index = 1, transFormOption = '0s linear') => {
     currenIndex = +index;
     slider.style.transition = `transform ${transFormOption}`;
@@ -101,3 +102,4 @@ sliderContainer.addEventListener('touchstart', startSlider, { passive: false });
 // * when mouseup or touchend
 window.addEventListener('mouseup', endSlider);
 window.addEventListener('touchend', endSlider);
+

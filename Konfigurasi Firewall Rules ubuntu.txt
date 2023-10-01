@@ -1,0 +1,19 @@
+Instal ufw jika Anda belum menginstalnya.
+
+sudo apt-get install ufw -y
+Sebelum kita menyiapkan aturan firewall, periksa apakah UFW diaktifkan atau dinonaktifkan dengan mengetik:
+
+sudo ufw status
+
+Jika UFW tidak diaktifkan, aktifkan dengan mengetik:
+
+sudo ufw enable
+Setelah UFW diaktifkan, atur rules firewall dengan mengetikkan berikut ini ke jendela terminal Anda:
+
+sudo ufw allow 80
+sudo ufw allow 442
+sudo ufw allow 8090
+sudo ufw allow 7080
+Setelah menyiapkan rules ini, jalankan perintah di bawah ini untuk memastikan bahwa Anda tidak membuat kesalahan sintaks yang akan mencegah Anda mengakses server web melalui HTTP/HTTPS.
+
+sudo ufw status verbose

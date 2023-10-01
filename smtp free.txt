@@ -1,0 +1,35 @@
+elternative jika port 25 diblock
+
+#ubuntu 20.4
+Change to sudo and edit the postfix config:
+
+sudo su -
+
+nano /etc/postfix/main.cf
+
+Scroll to the bottom of the config and paste in the additional config. 
+If you’re not using Sendinblue, you should change the server address in the first line:
+
+smtp_sasl_auth_enable = yes
+smtp_sasl_password_maps = static:rekanonlineofficial@gmail.com:5YXFAs9rbHkSTyW4
+smtp_sasl_security_options = noanonymous
+smtp_tls_security_level = may
+header_size_limit = 4096000
+relayhost = smtp-relay.sendinblue.com:587
+
+
+Setup a password file:
+nano /etc/postfix/sasl_passwd
+
+Put your credentials into the file, you’ll need to change the server, 
+email and password to match your own details:
+
+[smtp-relay.sendinblue.com]:587 rekanonlineofficial@gmail.com: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
+
+Finally, encrypt the password and change the permissions, then restart postfix:
+
+postmap /etc/postfix/sasl_passwd
+chown root:postfix /etc/postfix/sasl_passwd*
+chmod 640 /etc/postfix/sasl_passwd*
+
+systemctl restart postfix && systemctl enable postfix

@@ -1,0 +1,5 @@
+#Update Server
+sudo apt-get update
+sudo apt-get upgrade -y
+
+#instal CyberPanel di Ubuntu 20.04

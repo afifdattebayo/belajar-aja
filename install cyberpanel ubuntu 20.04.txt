@@ -1,0 +1,12 @@
+#Update Server
+sudo apt-get update
+sudo apt-get upgrade -y
+
+#instal CyberPanel di Ubuntu 20.04
+wget -O installer.sh https://cyberpanel.net/install.sh
+
+#Jadikan script penginstal CyberPanel dapat dieksekusi.
+chmod +x installer.sh
+
+#Jalankan script instalasi CyberPanel.
+sh installer.sh
